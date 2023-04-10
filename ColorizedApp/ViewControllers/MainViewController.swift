@@ -9,6 +9,7 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
+    // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let colorVC = segue.destination as? ColorViewController else {
             return
@@ -23,10 +24,10 @@ final class MainViewController: UIViewController {
         colorVC.delegate = self
     }
     
+    // MARK: - IBActions
     @IBAction func changeColorPressed(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "changeColor", sender: nil)
     }
-    
 }
 
 // MARK: - ColorViewControllerDelegate

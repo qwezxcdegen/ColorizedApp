@@ -24,6 +24,7 @@ final class ColorViewController: UIViewController {
     @IBOutlet weak var greenTextField: UITextField!
     @IBOutlet weak var blueTextField: UITextField!
     
+    // MARK: - Properties
     var redColor: Float!
     var greenColor: Float!
     var blueColor: Float!
@@ -34,6 +35,8 @@ final class ColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         redTextField.addDoneButtonOnKeyboard()
+        greenTextField.addDoneButtonOnKeyboard()
+        blueTextField.addDoneButtonOnKeyboard()
         
         redTextField.delegate = self
         greenTextField.delegate = self
@@ -98,25 +101,9 @@ final class ColorViewController: UIViewController {
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
-    func addDoneButtonOnKeyboard(){
-            let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
-            doneToolbar.barStyle = .default
-
-            let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-            let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
-
-            let items = [flexSpace, done]
-            doneToolbar.items = items
-            doneToolbar.sizeToFit()
-
-            redTextField.inputAccessoryView = doneToolbar
-        }
-
-        @objc func doneButtonAction(){
-            redTextField.resignFirstResponder()
-        }
 }
 
+// MARK: - UITextFieldDelegate
 extension ColorViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let newValue = Float(textField.text ?? "0.0") else { return }
