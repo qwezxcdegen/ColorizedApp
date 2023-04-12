@@ -14,7 +14,6 @@
 		072DDA3829CCDDA100C96956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072DDA3729CCDDA100C96956 /* Assets.xcassets */; };
 		072DDA3B29CCDDA100C96956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072DDA3929CCDDA100C96956 /* LaunchScreen.storyboard */; };
 		076B63F529E4A1780003FACF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B63F429E4A1780003FACF /* MainViewController.swift */; };
-		076B63F829E4A73A0003FACF /* ColorViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B63F729E4A73A0003FACF /* ColorViewControllerDelegate.swift */; };
 		076B63FB29E4AE510003FACF /* Extension + UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B63FA29E4AE510003FACF /* Extension + UITextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		072DDA3A29CCDDA100C96956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		072DDA3C29CCDDA100C96956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076B63F429E4A1780003FACF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		076B63F729E4A73A0003FACF /* ColorViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewControllerDelegate.swift; sourceTree = "<group>"; };
 		076B63FA29E4AE510003FACF /* Extension + UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UITextField.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				076B63F929E4AE400003FACF /* Extensions */,
-				076B63F629E4A7050003FACF /* Protocols */,
 				076B63F129E4A1340003FACF /* App */,
 				076B63F229E4A15E0003FACF /* ViewControllers */,
 				076B63F329E4A1660003FACF /* Views */,
@@ -98,14 +95,6 @@
 				072DDA3929CCDDA100C96956 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		076B63F629E4A7050003FACF /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				076B63F729E4A73A0003FACF /* ColorViewControllerDelegate.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		076B63F929E4AE400003FACF /* Extensions */ = {
@@ -187,7 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076B63F829E4A73A0003FACF /* ColorViewControllerDelegate.swift in Sources */,
 				076B63FB29E4AE510003FACF /* Extension + UITextField.swift in Sources */,
 				072DDA3329CCDDA100C96956 /* ColorViewController.swift in Sources */,
 				072DDA2F29CCDDA100C96956 /* AppDelegate.swift in Sources */,

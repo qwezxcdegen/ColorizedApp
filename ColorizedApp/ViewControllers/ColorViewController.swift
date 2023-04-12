@@ -82,7 +82,6 @@ final class ColorViewController: UIViewController {
     }
     
     @IBAction func donePressed() {
-        view.endEditing(true)
         guard let color = colorView.backgroundColor else { return }
         delegate.setColor(color)
         dismiss(animated: true)

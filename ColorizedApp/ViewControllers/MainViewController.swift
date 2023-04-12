@@ -7,8 +7,12 @@
 
 import UIKit
 
+// MARK: - Protocols
+protocol ColorViewControllerDelegate {
+    func setColor(_ color: UIColor)
+}
+
 final class MainViewController: UIViewController {
-    
     // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let colorVC = segue.destination as? ColorViewController else {
@@ -22,11 +26,6 @@ final class MainViewController: UIViewController {
         colorVC.blueColor = Float(colors[2])
         
         colorVC.delegate = self
-    }
-    
-    // MARK: - IBActions
-    @IBAction func changeColorPressed(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "changeColor", sender: nil)
     }
 }
 
