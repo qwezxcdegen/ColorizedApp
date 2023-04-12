@@ -21,13 +21,10 @@
                     <navigationItem key="navigationItem" id="QUE-Pt-oNN">
                         <barButtonItem key="rightBarButtonItem" image="circle.righthalf.filled" catalog="system" id="wNx-xW-3tV">
                             <connections>
-                                <action selector="changeColorPressed:" destination="xLa-yT-mCw" id="ef9-P3-kdh"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DEp-kZ-Wpm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="changeColor" modalPresentationStyle="fullScreen" id="6Ul-0q-R0J"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljM-Ml-4NG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,24 +95,24 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bfT-ZB-3p3">
-                                                <rect key="frame" x="93.666666666666686" y="0.0" width="82" height="138.66666666666666"/>
+                                                <rect key="frame" x="93.666666666666686" y="0.0" width="102" height="138.66666666666666"/>
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.59999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vz9-4G-4GM">
-                                                        <rect key="frame" x="-2" y="0.0" width="86" height="39.333333333333336"/>
+                                                        <rect key="frame" x="-2" y="0.0" width="106" height="39.333333333333336"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                         <connections>
                                                             <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="q10-Q6-ifA"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UHj-Og-wBv">
-                                                        <rect key="frame" x="-2" y="50.333333333333343" width="86" height="39"/>
+                                                        <rect key="frame" x="-2" y="50.333333333333343" width="106" height="39"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                         <connections>
                                                             <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mxu-nZ-gIJ"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hzd-xR-9gn">
-                                                        <rect key="frame" x="-2" y="100.33333333333334" width="86" height="39.333333333333343"/>
+                                                        <rect key="frame" x="-2" y="100.33333333333334" width="106" height="39.333333333333343"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <connections>
                                                             <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="i0s-qO-U1M"/>
@@ -124,10 +121,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="w7M-uq-A62">
-                                                <rect key="frame" x="183.66666666666663" y="0.0" width="177.33333333333337" height="138.66666666666666"/>
+                                                <rect key="frame" x="203.66666666666663" y="0.0" width="157.33333333333337" height="138.66666666666666"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.33" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="TE5-Ie-f7X">
-                                                        <rect key="frame" x="120.33333333333334" y="0.0" width="57" height="38.333333333333336"/>
+                                                        <rect key="frame" x="100.33333333333334" y="0.0" width="57" height="38.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="57" id="99x-W0-sno"/>
                                                         </constraints>
@@ -135,12 +132,12 @@
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.33" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-nZ-yxn">
-                                                        <rect key="frame" x="120.33333333333334" y="50.333333333333343" width="57" height="38"/>
+                                                        <rect key="frame" x="100.33333333333334" y="50.333333333333343" width="57" height="38"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.33" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="0z5-PI-RUl">
-                                                        <rect key="frame" x="120.33333333333334" y="100.33333333333334" width="57" height="38.333333333333343"/>
+                                                        <rect key="frame" x="100.33333333333334" y="100.33333333333334" width="57" height="38.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                     </textField>
