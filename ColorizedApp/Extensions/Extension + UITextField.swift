@@ -5,19 +5,11 @@
 //  Created by Степан Фоминцев on 11.04.2023.
 //
 
-import Foundation
 import UIKit
 
 extension UITextField {
     func addDoneButtonOnKeyboard() {
-        let doneToolbar: UIToolbar = UIToolbar(
-            frame: CGRect.init(
-                x: 0,
-                y: 0,
-                width: UIScreen.main.bounds.width,
-                height: 50
-            )
-        )
+        let keyboardToolbar = UIToolbar()
         
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let done: UIBarButtonItem = UIBarButtonItem(
@@ -26,11 +18,12 @@ extension UITextField {
             target: self,
             action: #selector(doneButtonAction)
         )
+        
         let items = [space, done]
+        keyboardToolbar.sizeToFit()
+        keyboardToolbar.items = items
         
-        doneToolbar.items = items
-        
-        self.inputAccessoryView = doneToolbar
+        self.inputAccessoryView = keyboardToolbar
     }
     
     @objc func doneButtonAction() {
